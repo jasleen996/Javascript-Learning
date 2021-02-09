@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Color Gallery</title>
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<script src="https://kit.fontawesome.com/747e8a1e7b.js" crossorigin="anonymous"></script>
+		<style>
+		#pictures{
+		display:grid;
+		width:100%;
+		grid-template-columns:repeat(3,1fr);
+		grid-template-rows:(1fr,1fr.1fr);
+		margin-left:auto;
+		margin-right:auto;
+		background-image:url("./images/pic7.jpg");
+		height:1773px;
+		grid-gap:30px;
+		}
+		</style>
+	</head>
+	<body>
+		<header style="background-color:green; ">
+			<div >
+				<ul id="list">
+					<li><a href="./welcome.html" id="test" style="font-size:25px;color:white; ">Welcome</a></li>
+					<a href="BandW.html" style=" font-size:25px; color:white;" >Black & White Gallery</a>
+					<a href="color.html" style=" font-size:25px;color:white; " >color gallery</a>
+					<a href="shopping.html" style=" font-size:25px; color:white; " >shopping</a>
+					<a href="invoice.html "style=" font-size:25px; color:white;" >invoice</a>
+					<a href="Final.html" style=" font-size:25px; color:white;" >Logout</a>
+				</ul>
+			</div>
+			
+			<div>
+				<img src="images/side.jpg" style="height:80px; width:80px; padding-left:80px;">
+			</div>
+		</header>
+		<section style="background-color:green; width:100%; margin-top:40px;">
+		<h1 id="headingB" style="font-size:100px; text-align:center; background-color:green; display:inline; padding-left:580px;">
+		 <span style="color:white;">Color</span> 
+		
+		</h1>
+		</section>
+		<section style="padding-bottom:20px;padding-top:20px;">
+			<br><input id="searchText" type="text" name="forsearch" style="width:60%; margin-left:300px; height:30px;"><br>
+			<p onclick="search()" style="width:60%; margin-left:300px; background-color:green; height:30px;text-align:center; padding:10px; padding-top:15px;">Search</p>
+		</section>
+		<section id="search-section">
+			<div class="search-section">
+				<div id="search-det" class="search-details">
+					<div class="search-bold">Room</div>
+					Details:<br/>
+						ILCE-7SM2<br/>
+						Focal Length 43.0mm<br/>
+						Shutter Speed 5ms<br/>
+						Aperture f/4.0.0<br/>
+						ISO/Film 320<br/>
+						Category Historical
+				</div>
+				<div id="search-imgs" class="search-img">
+					<img src="./images/pic1.jpg" alt="">
+				</div>
+			</div>
+		</section>
+		<section id="pictures">
+		<a href="#room"><img src="./images/pic1.jpg" style="width:449.67px; height:568.63px;"></a>
+		<a href="#garden"><img src="./images/pic2.jpg" style="width:449.67px; height:568.63px;"></a>
+		<a href="#building"><img src="./images/pic3.jpg" style="width:449.67px; height:568.63px;"></a>
+		<a href="#mountain"><img src="./images/pic13.jpg" style="width:449.67px; height:568.63px;"></a>
+		<a href="#sunset"><img src="./images/pic14.jpg" style="width:449.67px; height:568.63px;"></a>
+		<a href="#heart"><img src="./images/pic12.jpg" style="width:449.67px; height:568.63px;"></a>
+		<a href="#beach"><img src="./images/pic15.jpg" style="width:449.67px; height:568.63px;"></a>
+		</section>
+		
+		<section style="background-image:url(./images/pic7.jpg); display: flex; flex-wrap: wrap;">
+			<div class="detail-cont">
+				<a><img id="room" src="./images/pic1.jpg" style="width:249.67px; height:368.63px;"></a>
+				<div class="details">
+					<div class="bold-tex">Room</div>
+					<div class="details-cont">
+						Details:<br/>
+						ILCE-7SM2<br/>
+						Focal Length 43.0mm<br/>
+						Shutter Speed 5ms<br/>
+						Aperture f/4.0.0<br/>
+						ISO/Film 320<br/>
+						Category Historical
+					</div>
+					<a href="#pictures" class="go-to-top">Go To Top</a>
+				</div>
+			</div>
+			<div class="detail-cont">
+				<a><img id="garden" src="./images/pic2.jpg" style="width:249.67px; height:368.63px;"></a>
+				<div class="details">
+					<div class="bold-tex">Garden</div>
+					<div class="details-cont">
+						Details:<br/>
+						ILCE-7SM2<br/>
+						Focal Length 43.0mm<br/>
+						Shutter Speed 5ms<br/>
+						Aperture f/4.0.0<br/>
+						ISO/Film 320<br/>
+						Category Historical
+					</div>
+					<a href="#pictures" class="go-to-top">Go To Top</a>
+				</div>
+			</div>
+			<div class="detail-cont">
+				<a><img id="building" src="./images/pic3.jpg" style="width:249.67px; height:368.63px;"></a>
+				<div class="details">
+					<div class="bold-tex">Building</div>
+					<div class="details-cont">
+						Details:<br/>
+						ILCE-7SM2<br/>
+						Focal Length 43.0mm<br/>
+						Shutter Speed 5ms<br/>
+						Aperture f/4.0.0<br/>
+						ISO/Film 320<br/>
+						Category Historical
+					</div>
+					<a href="#pictures" class="go-to-top">Go To Top</a>
+				</div>
+			</div>
+			<div class="detail-cont">
+				<a><img id="mountain" src="./images/pic13.jpg" style="width:249.67px; height:368.63px;"></a>
+				<div class="details">
+					<div class="bold-tex">Mountain</div>
+					<div class="details-cont">
+						Details:<br/>
+						ILCE-7SM2<br/>
+						Focal Length 43.0mm<br/>
+						Shutter Speed 5ms<br/>
+						Aperture f/4.0.0<br/>
+						ISO/Film 320<br/>
+						Category Historical
+					</div>
+					<a href="#pictures" class="go-to-top">Go To Top</a>
+				</div>
+			</div>
+			<div class="detail-cont">
+				<a><img id="sunset" src="./images/pic14.jpg" style="width:249.67px; height:368.63px;"></a>
+				<div class="details">
+					<div class="bold-tex">Sunset</div>
+					<div class="details-cont">
+						Details:<br/>
+						ILCE-7SM2<br/>
+						Focal Length 43.0mm<br/>
+						Shutter Speed 5ms<br/>
+						Aperture f/4.0.0<br/>
+						ISO/Film 320<br/>
+						Category Historical
+					</div>
+					<a href="#pictures" class="go-to-top">Go To Top</a>
+				</div>
+			</div>
+			<div class="detail-cont">
+				<a><img id="heart" src="./images/pic12.jpg" style="width:249.67px; height:368.63px;"></a>
+				<div class="details">
+					<div class="bold-tex">Heart</div>
+					<div class="details-cont">
+						Details:<br/>
+						ILCE-7SM2<br/>
+						Focal Length 43.0mm<br/>
+						Shutter Speed 5ms<br/>
+						Aperture f/4.0.0<br/>
+						ISO/Film 320<br/>
+						Category Historical
+					</div>
+					<a href="#pictures" class="go-to-top">Go To Top</a>
+				</div>
+			</div>
+			<div class="detail-cont">
+				<a><img id="beach" src="./images/pic15.jpg" style="width:249.67px; height:368.63px;"></a>
+				<div class="details">
+					<div class="bold-tex">Beach</div>
+					<div class="details-cont">
+						Details:<br/>
+						ILCE-7SM2<br/>
+						Focal Length 43.0mm<br/>
+						Shutter Speed 5ms<br/>
+						Aperture f/4.0.0<br/>
+						ISO/Film 320<br/>
+						Category Historical
+					</div>
+					<a href="#pictures" class="go-to-top">Go To Top</a>
+				</div>
+			</div>
+		</section>
+		
+        <footer >
+			<div >
+				<ul id="footers">
+					<a href="https://www.facebook.com/" style="display:inline;"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://support.google.com/googlecurrents/?hl=en#topic=9259565"><i class="fab fa-google-plus-g"></i></a>
+					<a href="https://www.skype.com/en/"><i class="fab fa-skype"></i></a>
+					<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="app1.js"></script>
+		
+	</body>
+</html>	

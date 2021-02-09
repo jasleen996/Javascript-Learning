@@ -1,0 +1,99 @@
+<!DOCTYPE html><html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Invoice</title>
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+		<script src="https://kit.fontawesome.com/747e8a1e7b.js" crossorigin="anonymous"></script>
+		<style>
+		nav.fa{
+		display:inline;
+		padding:100px;
+		
+		}
+		.f{
+		display:inline;
+		padding:115px;
+		
+		}
+		#invoice{
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		}
+		</style>
+	</head>
+	<body>
+		<header style="background-color:#333; width:100%;">
+			<div >
+				<ul id="list">
+					<a href="./welcome.html" id="test" style="font-size:25px;color:white; ">Welcome</a>
+					<a href="BandW.html" style=" font-size:25px; color:white;" >Black & White Gallery</a>
+					<a href="color.html" style=" font-size:25px;color:white; " >color gallery</a>
+					<a href="shopping.html" style=" font-size:25px; color:white; " >shopping</a>
+					<a href="invoice.html "style=" font-size:25px; color:white;" >invoice</a>
+					<a href="Final.html" style=" font-size:25px; color:white;" >Logout</a>
+				</ul>
+			</div>
+			
+			<div>
+				<img src="images/side.jpg" style="height:80px; width:80px; padding-left:80px;">
+			</div>
+		</header>
+		<section style="background:navy; color:white; width:100%; padding:100px;">
+		<nav class="fa">
+		<u>Product Name</u>                                                                    
+		</nav> <nav class="fa"> <u>Price</u></nav><nav class="fa"> <u>Quantity </u></nav><nav class="fa"> <u>Totals</u></nav>
+		<br><br><br><br>
+        <nav class="f">
+		Pictures                                                                    
+		</nav> <nav class="f"> 1000</nav><nav class="f"> 5</nav><nav class="f"> Subtotal:<span id="invoice-total"> 3600</span><br><h3 style="margin-left:925px;">Tax Total</h3><span style="margin-left:925px;">180</span></nav>
+		<br><br>
+		<h1 style="margin-left:400px; color:white; font-size:50px;">Finalise Payment</h1>
+		<br><br>
+		
+		<nav id="invoice">
+		<div>
+		<form>
+		<h1>Credit Card Info</h1><br>
+		<label>*Card Number</label><br>
+		<input class="inputs" type="text" name="cardNumber" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<label>*CVC</label><br>
+		<input class="inputs" type="text" name="cvc" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<label>*Name on the card</label><br>
+		<input class="inputs" type="text" name="nameOnCard" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<label>*Expiration</label><br>
+		<input class="inputs" type="text" name="expiration" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<div onclick="clearAll()" style="width:410px; background-color:green; height:25px; text-align:center; padding:4px;">Clear</div><br>
+		<label>Total Purchase</label><br>
+		<input id="credit-total" type="text" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<h3>show terms</h3>
+		<input id="terms" type="checkbox" style="display:inline;"><p style="display:inline;"> *Agree Terms and Conditions</p>
+		</form>
+		</div>
+		
+		
+		<div>
+		<form>
+		<h1>Shipping Address</h1><br>
+		<label>*Name</label><br>
+		<input class="inputs" type="text" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<label>*Address</label><br>
+		<input class="inputs" type="text" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<label>Address line 2</label><br>
+		<input class="inputs2" type="text" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<label>*City</label><br>
+		<input class="inputs" type="text" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<label>*Postal Code</label><br>
+		<input class="inputs" type="text" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<label>*Province</label><br>
+		<input class="inputs" type="text" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		<label>country</label><br>
+		<input class="inputs2" type="text" style="width:400px; height:25px; margin-top:8px;"><br><br>
+		</form>
+		</div>
+		<button onclick="placeOrder()">Place Order</button>
+		</nav>
+		</section>
+
+		<script src="app3.js"></script>
+	</body>
+</html>
